@@ -1,4 +1,4 @@
-import Post from "../models/Post.js";
+import Post from "../models/PostModel.js";
 import User from "../models/UserModel.js";
 
 /* CREATE */
@@ -49,7 +49,7 @@ export const getUserPosts = async (req, res) => {
 /* UPDATE */
 export const likePost = async (req, res) => {
   try {
-    const { postId } = req.params;
+    const { id: postId } = req.params;
     const { userId } = req.body;
     const post = await Post.findById(postId);
     const isLiked = post.likes.get(userId);
