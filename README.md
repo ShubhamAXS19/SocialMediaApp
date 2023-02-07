@@ -66,7 +66,7 @@ $ https://github.com/ShubhamAXS19/SocialMediaApp.git
 ### cd client 
 ### `npm start`
 
-This app is deployed using [Heroku](https://www.heroku.com/).
+This app is deployed using [Vercel](https://social-media-client-psi.vercel.app/).
 
 ## Contributing
 
